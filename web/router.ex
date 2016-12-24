@@ -23,5 +23,7 @@ defmodule ApasServer.Router do
   scope "/api", ApasServer do
     pipe_through :api
 
+    post "/pourings", PouringContorller, :create
+    post "/bottle_changes", BottleChangeController, :create
    end
 end
