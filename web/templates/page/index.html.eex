@@ -1,15 +1,19 @@
 <h3><%= @total %>ml consumed since last bottle change</h3>
 
+<div class="left">
 <h3>Pourings</h3>
 <ul>
 <%= for [volume, date] <- @pourings do %>
     <li><%= volume %>ml at <%= date %></li>
 <% end %>
 </ul>
+</div>
 
+<div class="right">
 <h3>Bottle changes</h3>
 <ul>
 <%= for bc <- @bottle_changes do %>
     <li><%= bc %></li>
 <% end %>
 </ul>
+</div>

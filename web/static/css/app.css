@@ -3,3 +3,13 @@ body {
 background: black;
 color: white;
 }
+
+.left {
+width: 50%;
+float: left;
+}
+
+.right {
+float: right;
+width: 50%;
+}
